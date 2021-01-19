@@ -14,7 +14,7 @@
 		</Element>
 		<Element>
 			<m_CollectionName text="StandardHills"/>
-			<m_ReplaceMergedCollectionElements>false</m_ReplaceMergedCollectionElements>
+			<m_ReplaceMergedCollectionElements>true</m_ReplaceMergedCollectionElements>
 			<Element>
 				<m_Fields>
 					<m_Values>

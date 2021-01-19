@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>[COLOR:OperationChance_Green]Hillier Hills[ENDCOLOR]</Name>
+    <Guid>39da9e0f-c9ed-46e6-9aa9-842223b5da60</Guid>
+    <ProjectGuid>0b416c59-be03-42d0-8379-50f38cae8e40</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Changes the heightmap of Hills to make them more prominent and visible</Teaser>
+    <Description>Changes the heightmap of Hills to make them more prominent and visible</Description>
+    <Authors>Deliverator</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>false</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <AssemblyName>BetterHillGraphcis</AssemblyName>
+    <RootNamespace>BetterHillGraphcis</RootNamespace>
+    <InGameActionData><![CDATA[<InGameActions><UpdateArt id="Hills_Art"><Properties><LoadOrder>10</LoadOrder></Properties><File>(Mod Art Dependency File)</File></UpdateArt></InGameActions>]]></InGameActionData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="BetterHillGraphcis.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ArtDefs\TerrainStyle.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Materials\Better_Hills_Terrain_Element.mtl">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Hills_Bump_Test.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\Hills_Bump_Test.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\TerrainElementSet_Base.xlp">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ArtDefs\" />
+    <Folder Include="Materials\" />
+    <Folder Include="Textures\" />
+    <Folder Include="XLPs\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>
